@@ -1,0 +1,8 @@
+<?xml version="1.0" enoding="ASCII"?>
+<nttsks:AntTsk xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:nttsks="http://org.elipse.fx.ide.jdt/1.0" buildDiretory="${projet}/build">
+  <deploy>
+    <pplition nme="QLST"/>
+    <info/>
+  </deploy>
+  <signjr/>
+</nttsks:AntTsk>

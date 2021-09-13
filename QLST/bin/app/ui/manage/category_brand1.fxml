@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="1310.0" styleClass="container" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.manage_controller.category_brand1">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="619.0" prefWidth="650.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="675.0" spacing="10.0" style="-fx-background-color: #D0FA58; -fx-background-radius: 20 20 0 0;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="36.0" prefWidth="287.0">
+                     <children>
+                        <Label text="Category" textFill="#ff8000">
+                           <font>
+                              <Font name="Bell MT" size="36.0" />
+                           </font>
+                        </Label>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2.0" prefWidth="80.0" style="-fx-background-color: #DF7401;" />
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </VBox>
+                  <TextField fx:id="cat_name" prefHeight="25.0" prefWidth="391.0" promptText="Name" />
+                  <HBox alignment="CENTER" prefHeight="119.0" prefWidth="287.0" spacing="50.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#Add_cat" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #2e9afe;" text="ADD" />
+                        <Button mnemonicParsing="false" onAction="#Update_cat" style="-fx-background-color: #F4FA58;" text="UPDATE" />
+                        <Button mnemonicParsing="false" onAction="#Delete_cat" prefWidth="60.0" style="-fx-background-color: #FA5858;" text="DELETE" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="cat_id" prefHeight="25.0" prefWidth="20.0" visible="false" />
+                        <TextField fx:id="search_cat" prefHeight="25.0" prefWidth="289.0" promptText="Search: Name" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="170.0" right="170.0" top="20.0" />
+               </padding>
+            </VBox>
+            <TableView fx:id="table_cat" onMouseClicked="#getSelected_cat" prefHeight="419.0" prefWidth="675.0" style="-fx-background-radius: 20;">
+              <columns>
+                  <TableColumn fx:id="col_no_cat" prefWidth="65.0" text="No." />
+                <TableColumn fx:id="col_cat_id" minWidth="0.0" prefWidth="81.0" text="ID" visible="false" />
+                <TableColumn fx:id="col_cat_name" prefWidth="604.0" text="Category Name" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="619.0" prefWidth="650.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="327.0" spacing="10.0" style="-fx-background-color: #f2c84b; -fx-background-radius: 20 20 0 0;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="36.0" prefWidth="287.0">
+                     <children>
+                        <Label text="Brand" textFill="#2e9afe">
+                           <font>
+                              <Font name="Bell MT" size="36.0" />
+                           </font>
+                        </Label>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2.0" prefWidth="80.0" style="-fx-background-color: #0487d9;" />
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </VBox>
+                  <TextField fx:id="brand_name" promptText="Name" />
+                  <HBox alignment="CENTER" prefHeight="119.0" prefWidth="287.0" spacing="50.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#Add_brand" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #2e9afe;" text="ADD" />
+                        <Button mnemonicParsing="false" onAction="#Update_brand" style="-fx-background-color: #F4FA58;" text="UPDATE" />
+                        <Button mnemonicParsing="false" onAction="#Delete_brand" prefWidth="60.0" style="-fx-background-color: #FA5858;" text="DELETE" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="brand_id" prefHeight="25.0" prefWidth="24.0" visible="false" />
+                        <TextField fx:id="search_brand" prefHeight="25.0" prefWidth="285.0" promptText="Search: Name" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="170.0" right="170.0" top="20.0" />
+               </padding>
+            </VBox>
+            <TableView fx:id="table_brand" onMouseClicked="#getSelected_brand" prefHeight="419.0" prefWidth="0.0" style="-fx-background-radius: 20;">
+              <columns>
+                  <TableColumn fx:id="col_no_brand" prefWidth="68.0" text="No." />
+                <TableColumn fx:id="col_brand_id" prefWidth="75.0" text="ID" visible="false" />
+                <TableColumn fx:id="col_brand_name" prefWidth="601.0" text="Brand Name" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

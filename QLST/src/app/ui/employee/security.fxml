@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.employee_controller.security">
+   <children>
+      <Label layoutX="145.0" layoutY="50.0" text="Login Security" textFill="#ff5050">
+         <font>
+            <Font name="Footlight MT Light" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="112.0" text="Username: " textFill="#f57171">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_username" layoutX="145.0" layoutY="112.0" prefHeight="25.0" prefWidth="211.0" promptText="Username" />
+      <TextField fx:id="txt_passhiden" layoutX="145.0" layoutY="144.0" prefHeight="25.0" prefWidth="211.0" promptText="Password" visible="false" />
+      <PasswordField fx:id="txt_pass" layoutX="145.0" layoutY="144.0" prefHeight="25.0" prefWidth="211.0" promptText="Password" />
+      <Label layoutX="77.0" layoutY="138.0" text="Pass: " textFill="#f57171">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="btn_showpass" layoutX="145.0" layoutY="181.0" mnemonicParsing="false" onAction="#show_pass" text="CheckBox" />
+      <Button layoutX="197.0" layoutY="219.0" mnemonicParsing="false" onAction="#btn_login" text="Login and Delete" />
+      <Label fx:id="order_id" layoutX="365.0" layoutY="61.0" text="Order_id" textFill="#62ff6c" />
+   </children>
+</AnchorPane>

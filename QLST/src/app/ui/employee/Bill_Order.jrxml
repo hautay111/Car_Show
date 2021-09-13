@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Bill_Order" pageWidth="500" pageHeight="792" columnWidth="460" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a4f4a9ca-a03c-42bf-b76d-1e72b4e4e54f">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ConnectDB_Jasper"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="cash" class="java.lang.String"/>
+	<parameter name="total" class="java.lang.String"/>
+	<parameter name="tiendu" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="amount" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="price" class="java.lang.String"/>
+	<field name="total1" class="java.lang.String"/>
+	<variable name="name1" class="java.lang.Integer" resetType="Page" calculation="Count">
+		<variableExpression><![CDATA[$F{name}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="120" splitType="Stretch">
+			<staticText>
+				<reportElement x="110" y="-10" width="230" height="40" uuid="962feba2-7e73-4c01-a804-90b62e1a3549"/>
+				<textElement>
+					<font size="30"/>
+				</textElement>
+				<text><![CDATA[Bill SuperMarket]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="110" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="207" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="5" width="100" height="30" uuid="60de8cd9-365e-45c5-8b40-ef9cdb4b325b"/>
+				<textElement textAlignment="Center">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="5" width="100" height="30" uuid="fbffb2d3-7375-4bad-9d2c-b3043a6df4a9"/>
+				<textElement textAlignment="Center">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="5" width="100" height="30" uuid="a35009d0-2686-4942-8cfe-3a9aad15d383"/>
+				<textElement textAlignment="Center">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="5" width="100" height="30" uuid="090232ec-fb1b-415e-aa33-7a14a4aeef7f"/>
+				<textElement textAlignment="Center">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="10" y="50" width="100" height="30" uuid="4c3aadc4-abc0-4b0d-902d-b5401ec0d4d4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="50" width="100" height="30" uuid="b629656a-b572-4c95-9c71-2dff1b315af9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="50" width="100" height="30" uuid="c7abda5c-8488-4d1c-934c-a3231ca39dba"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="50" width="100" height="30" uuid="065e071f-58c7-4f28-8c34-58fae72adeb2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{total1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="105" y="10" width="160" height="30" uuid="cd399ddf-06e8-4d76-a4c5-2e691a4d4552"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="105" y="50" width="160" height="30" uuid="9878b58c-6b53-4bd6-8ca6-d48acfa6cd27"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cash}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="5" y="10" width="90" height="30" uuid="9bfa009c-ef79-482e-b7e9-fc01b1e173c7"/>
+				<textElement textAlignment="Right">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Total Bill :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="50" width="90" height="30" uuid="588bf2d6-42e0-457b-a69f-cdd5098a2d49"/>
+				<textElement textAlignment="Right">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Cash :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="105" y="90" width="160" height="30" uuid="d5e46a84-3af8-4f77-a9da-2a1022cadb5c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tiendu}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="5" y="90" width="90" height="30" uuid="e6d96e86-bcde-406c-8552-8a270416b81b"/>
+				<textElement textAlignment="Right">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Balance :]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

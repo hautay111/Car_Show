@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.manage_controller.run_out">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="50.0" prefWidth="1310.0">
+               <children>
+                  <TextField fx:id="search" layoutX="407.0" layoutY="10.0" prefHeight="25.0" prefWidth="261.0" promptText="Search: product,warehouse" />
+                  <Label layoutX="32.0" layoutY="2.0" text="Expity: " textFill="#fcfcfc">
+                     <font>
+                        <Font name="Footlight MT Light" size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <TableView fx:id="table_run_out" prefHeight="580.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="col_no" prefWidth="75.0" text="No." />
+                <TableColumn fx:id="col_ex_id" prefWidth="75.0" text="EX_ID" />
+                  <TableColumn fx:id="col_sup" prefWidth="268.3333282470703" text="SUPPLIER" />
+                  <TableColumn fx:id="sol_pro" prefWidth="229.6666717529297" text="PRODUCT" />
+                  <TableColumn fx:id="col_ex" prefWidth="189.0" text="EXPIRY DATE" />
+                  <TableColumn fx:id="col_amount" prefWidth="109.66665649414062" text="AMOUNT" />
+                  <TableColumn fx:id="col_price" prefWidth="193.0" text="INPUT PRICE" />
+                  <TableColumn fx:id="col_total" prefWidth="170.0" text="TOTAL" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

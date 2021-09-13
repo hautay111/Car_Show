@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/app/controller/employee_controller/Bill_Manage.java=UTF-8
+encoding//src/app/controller/employee_controller/Inventory_crud/Inventory_Inset.java=UTF-8
+encoding//src/app/controller/manage_controller/Bill_Manage.java=UTF-8
+encoding//src/app/controller/manage_controller/Product_controller/product.java=UTF-8
+encoding//src/app/controller/manage_controller/product_crud/product_add.java=UTF-8
+encoding//src/app/controller/manage_controller/product_crud/product_edit.java=UTF-8
+encoding//src/app/ui/employee/Bill_Order.jrxml=UTF-8
+encoding//src/app/ui/employee/Invoice.jrxml=UTF-8

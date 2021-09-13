@@ -1,0 +1,10 @@
+Welcome You to SuperMarket
+Name:  Bánh G?o M?t Ong               Price:  25000               Amount:  1
+--  --  --  --  --  --  --  --  --  - -  --  --  --  --  --  --  --  --  --  --  --
+Name:  Bánh G?o               Price:  45000               Amount:  3
+--  --  --  --  --  --  --  --  --  - -  --  --  --  --  --  --  --  --  --  --  --
+Total Bill : 160000
+ You get You don't have enough points to get a discount. Let's try to steal!
+Payment : 160000.0
+------------------- Good Bye And See You Again-------------------
+

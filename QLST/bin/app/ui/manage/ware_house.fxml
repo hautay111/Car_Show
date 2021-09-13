@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.manage_controller.ware_house">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Pane prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="search" layoutX="514.0" layoutY="8.0" prefHeight="25.0" prefWidth="314.0" promptText="Search: Name,Supplier, Date Expiry,Price" />
+                  <Label fx:id="wh_id" layoutX="33.0" layoutY="13.0" text="Label" visible="false" />
+                  <Label layoutX="442.0" layoutY="8.0" text="Search: " textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <TableView fx:id="table_ware_house" onMouseClicked="#getSelected" prefHeight="556.0" prefWidth="1290.0">
+              <columns>
+                <TableColumn fx:id="col_no" prefWidth="75.0" text="No." />
+                <TableColumn fx:id="col_id" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="col_pro_id" minWidth="0.0" prefWidth="0.0" text="Pro_id" />
+                  <TableColumn fx:id="col_name" prefWidth="182.0" text="Name" />
+                  <TableColumn fx:id="col_sup" prefWidth="207.6666259765625" text="Supplier" />
+                  <TableColumn fx:id="col_amount" prefWidth="140.66668701171875" text="Amount" />
+                  <TableColumn fx:id="col_price" prefWidth="147.33331298828125" text="Price" />
+                  <TableColumn fx:id="col_date_input" prefWidth="181.0" text="Date Input" />
+                  <TableColumn fx:id="col_date_expiry" prefWidth="189.333251953125" text="Date Expiry" />
+                  <TableColumn fx:id="col_action" prefWidth="91.666748046875" text="Action" />
+                  <TableColumn fx:id="col_ipd_id" minWidth="0.0" prefWidth="0.0" text="ipd_id" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

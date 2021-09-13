@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" prefHeight="714.0" prefWidth="1352.0" styleClass="Inventory_css" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.employee_controller.Inventory_employee">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="1182.0">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="319.0">
+               <children>
+                  <Label layoutX="32.0" layoutY="14.0" prefHeight="70.0" prefWidth="210.0" style="-fx-effect: dropshadow(three-pass-box,#EE82EE, 5, 0.5, 0, 2);" text="Inventory">
+                     <font>
+                        <Font name="Consolas Bold" size="40.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.7177778032090929" centerY="0.29007632131794925" cycleMethod="REFLECT" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8947368264198303" green="0.14912280440330505" blue="0.5964912176132202" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9684210419654846" green="0.6814814805984497" blue="0.6814814805984497" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+                  <TextField fx:id="emp_id" layoutX="268.0" layoutY="14.0" opacity="0.0" prefHeight="25.0" prefWidth="46.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="100.0" prefWidth="418.0">
+               <children>
+                  <TextField fx:id="search_inventory" layoutX="58.0" layoutY="37.0" prefHeight="34.0" prefWidth="210.0" style="-fx-background-radius: 1em;" stylesheets="@../css/application.css" />
+                  <ImageView fitHeight="34.0" fitWidth="36.0" layoutX="288.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/icons8_Search_52px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="100.0" prefWidth="438.0">
+               <children>
+                  <Label layoutX="-8.0" layoutY="38.0" prefHeight="26.0" prefWidth="117.0" text="Total products :">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.4822222391764323" centerY="0.7824427153317983" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9157894849777222" green="0.22385965287685394" blue="0.6390175223350525" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.35555556416511536" blue="0.35555556416511536" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="amount_warehouse" layoutX="121.0" layoutY="37.0" prefHeight="26.0" prefWidth="141.0" text="Amount product in warehouse:" textFill="#ff3838c0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <ColorPicker layoutX="287.0" layoutY="37.0" prefHeight="28.0" prefWidth="125.0" promptText="ds" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <TabPane layoutX="147.0" layoutY="236.0" prefHeight="448.0" prefWidth="1057.0" styleClass="TabPane_css" stylesheets="@../css/application.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="View All">
+               <content>
+                  <TableView fx:id="table_inventory" onMouseClicked="#getSelected" prefHeight="419.0" prefWidth="843.0" style="-fx-background-color: #ffffff;" styleClass="TableView_css" stylesheets="@../css/application.css">
+                    <columns>
+                        <TableColumn fx:id="col_no" prefWidth="75.0" text="No" />
+                        <TableColumn fx:id="col_wh_id" prefWidth="93.5999755859375" text="Wh_id" />
+                        <TableColumn fx:id="col_inp_de_id" prefWidth="91.99995422363281" text="Input_de_id" />
+                        <TableColumn fx:id="col_pro_name" prefWidth="220.800048828125" text="Pro_name" />
+                      <TableColumn fx:id="col_amount" prefWidth="169.5999755859375" text="Amount" />
+                        <TableColumn fx:id="col_input_price" prefWidth="188.0" text="Input Price" />
+                        <TableColumn fx:id="col_date_input" prefWidth="216.7999267578125" text="Date Input" />
+                    </columns>
+                  </TableView>
+               </content>
+            </Tab>
+          <Tab text="View History">
+               <content>
+                  <TableView prefHeight="427.0" prefWidth="908.0" style="-fx-background-color: #ffffff;">
+                     <columns>
+                        <TableColumn prefWidth="84.79998588562012" text="Wh_id" />
+                        <TableColumn prefWidth="78.4000015258789" text="Pro_id" />
+                        <TableColumn prefWidth="120.80001831054688" text="Amount Stocks" />
+                        <TableColumn prefWidth="104.79998779296875" text="Amount Input" />
+                        <TableColumn prefWidth="104.79995727539062" text="Price Input" />
+                        <TableColumn prefWidth="124.800048828125" text="Date Input" />
+                        <TableColumn prefWidth="104.800048828125" text="Pro_Total" />
+                        <TableColumn prefWidth="141.5999755859375" text="Status" />
+                     </columns>
+                  </TableView>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <LineChart layoutX="827.0" layoutY="65.0" prefHeight="192.0" prefWidth="334.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <ImageView fitHeight="32.0" fitWidth="41.0" layoutX="1302.0" layoutY="15.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/icons8-go-back-48.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="147.0" layoutY="199.0" mnemonicParsing="false" onMouseClicked="#Inventory_import" prefHeight="28.0" prefWidth="132.0" style="-fx-background-radius: 1em;" styleClass="Shiny" stylesheets="@../css/application.css" text="Import goods" textFill="#fc6b6b">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="741.0" layoutY="200.0" mnemonicParsing="false" onAction="#Delete_inventory" prefHeight="25.0" prefWidth="98.0" style="-fx-background-radius: 1em;" styleClass="Shiny" stylesheets="@../css/application.css" text="Delete" textFill="#ff0c0c" />
+      <Button layoutX="627.0" layoutY="163.0" mnemonicParsing="false" onAction="#Update_inventory" opacity="0.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-radius: 1em;" styleClass="Shiny" stylesheets="@../css/application.css" text="Update" />
+      <TextField fx:id="text_product_id" layoutX="564.0" layoutY="120.0" prefHeight="25.0" prefWidth="54.0" visible="false" />
+      <TextField fx:id="text_wh_id1" layoutX="637.0" layoutY="120.0" prefHeight="25.0" prefWidth="46.0" visible="false" />
+
+
+
+      <Button layoutX="611.0" layoutY="201.0" mnemonicParsing="false" onAction="#load_inventory" prefHeight="25.0" prefWidth="98.0" style="-fx-background-radius: 1em;" stylesheets="@../css/application.css" text="Load" />
+      <Button layoutX="163.0" layoutY="150.0" mnemonicParsing="false" onAction="#export_product" opacity="0.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-radius: 1em;" stylesheets="@../css/application.css" text="Export" />
+
+
+      <Button layoutX="611.0" layoutY="201.0" mnemonicParsing="false" onAction="#load_inventory" prefHeight="25.0" prefWidth="98.0" style="-fx-background-radius: 1em;" styleClass="Shiny" stylesheets="@../css/application.css" text="Load" textFill="#ff0303" />
+      <Button layoutX="163.0" layoutY="150.0" mnemonicParsing="false" onAction="#export_product" opacity="0.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-radius: 1em;" styleClass="Shiny" stylesheets="@../css/application.css" text="Export" textFill="RED" />
+      <TextField fx:id="text_input_detail_id" layoutX="477.0" layoutY="200.0" opacity="0.0" prefHeight="26.0" prefWidth="26.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,158 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.parent{
+	-fx-background-color:#fff;
+}
+.sidebar{
+	-fx-background-color: linear-gradient(to right,#2B102B, #2B102B);
+	-fx-background-radius: 20.0px 20.0px;
+}
+.forgetBtn{
+	-fx-text-fill: #a3a3a3;
+}
+.forgetBtn:hover{
+	-fx-text-fill: #6747CD;
+}
+.loginBtn{
+	-fx-background-color:#6747CD;
+	-fx-text-fill: #fff;
+	-fx-background-radius: 5.0px;
+}
+.loginBtn:hover{
+	-fx-background-color:transparent;
+	-fx-border-radius: 5.0px;
+	-fx-text-fill: #6747CD;
+	-fx-border-color: #6747CD;
+	-fx-border-width: 1.0px;
+	-fx-border-style: solid;
+	
+}
+.btnBack{
+	-fx-fill: #545454;
+}
+.btnBack:hover{
+	-fx-fill: #6747CD;
+}
+/*--------------Home Page--------------------- */
+.gradient-background{
+	-fx-background-color: #61D8DE;
+	 -fx-background-image: url("../../image/unnamed.jpg");
+	-fx-background-size: 100% 100%;
+	
+}
+
+.login_css{
+	-fx-background-image: url("../../image/istockphoto-932004524-170667a.jpg");
+	-fx-background-size: 100% 100%;
+}
+.image_bill{
+	-fx-background-image: url("../../image/1vMd32b.jpg");
+}
+.Inventory_css{
+	-fx-background-image: url("../../image/Bau-troi-hong-cute.jpg");
+}
+.Changeshift_css{
+	-fx-background-image: url("../../image/Sky.png");
+}
+.line-color{
+	-fx-background-color: #F3ABB5;
+}
+.login-ui{
+		-fx-background-radius: 1em 2em;
+		-fx-background-image: url("../../image/enseigne-au-neon_53876-80363.jpg");
+}
+.container{
+	-fx-background-color: rgba(255.0,255.0,255.0,0.2);
+	-fx-background-radius: 10.0;
+}
+.shadow{
+	-fx-effect: dropshadow(three-pass-box,rgba(0.0,0.0,0.0,0.2),10.0,0.0,0.0,10.0); 
+	-fx-text-fill: #000000;
+}
+.shadow:hover{
+	-fx-text-fill: #6747CD;
+	
+}
+
+.btnhome{
+	-fx-background-color: rgba(255.0,255.0,255.0,0.2);
+	-fx-background-radius: 10.0;
+	
+	-fx-border-radius: 10.0;
+	-fx-text-fill: #6747CD;
+	-fx-border-color: #6747CD;
+	-fx-border-width: 1.0px;
+	-fx-border-style: solid;
+	
+}
+.btnhome:focused{
+	-fx-background-color: rgba(255.0,255.0,255.0,0.2);
+	-fx-background-radius: 10.0;	
+	-fx-border-color: #6747CD;
+	-fx-border-radius: 10.0;	
+	-fx-text-fill: #6747CD;
+	-fx-border-width: 1.0px;
+}
+.btnhome:pressed{
+	
+	-fx-background-color: #57989B;
+    -fx-scale-y: 1.05;
+    -fx-scale-x: 1.05;
+    -fx-text-fill: #6747CD;
+    
+}
+.btnhome:hover{
+	
+	-fx-background-color: rgba(255.0,255.0,255.0,0.2);
+	-fx-background-radius: 10.0;
+	-fx-border-radius: 10.0;
+	-fx-text-fill: #6747CD;
+	-fx-border-color: #6747CD;
+	-fx-border-width: 1.0px;
+	-fx-border-style: solid;
+	
+}
+
+.btnproduct{
+	-fx-background-radius: 10.0px 10.0px;
+	-fx-border-radius: 10.0px 10.0px;
+}
+
+.btnsale:hover{
+	
+    -fx-text-fill: #5A8F99;
+    -fx-background-color:#91B4BB;
+}
+
+.axis{
+	-fx-stroke: #fff;
+	-fx-fill:#fff;
+	-fx-font-size:25.0;
+	-fx-tick-label-fill: #fff;
+	-fx-tick-label-font-size: 13.0;
+}
+
+.TableView_css  {
+	-fx-background-radius:30;
+}
+
+.TableView_css .column-header-background{
+	-fx-background-color:#E6E6FA;
+	-fx-background-radius:30;
+	-fx-background-insets:0 0 10 0;
+	-fx-padding:0 0 10 0;
+	-fx-effect: dropshadow(two-pass-box, #91B4BB,15,0.0,0.1,3);
+}
+
+.TableView_css .column-header, .TableView_css .filler{
+	-fx-size:40;
+	-fx-border-width:0 0 10 0;
+	-fx-background-color:transpare;
+}
+
+.Shiny {
+    -fx-background-color: linear-gradient(to right, #ee9ca7, #ffdde1) ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+}
+.Shiny:hover {
+    -fx-background-color: linear-gradient(to left, #ee9ca7, #ffdde1) ;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javafx16"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/AbsoluteLayout.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/activation.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/barcode4j.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/BarCodeReader.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/bcprov-jdk15on-1.64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/bridj-0.6.2-windows-only.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/castor-core-1.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/castor-xml-1.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/commons-beanutils-1.9.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/commons-collections-3.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/commons-collections4-4.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/core-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/dom4j.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/ecj-3.21.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/fontawesomefx-commons-9.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/fontawesomefx-fontawesome-4.7.0-9.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/itext-2.1.7.js8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/itextpdf-5.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/jackson-annotations-2.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/jackson-core-2.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/jackson-databind-2.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/jasperreports-6.17.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/javase-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/javax.inject-1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/javax.mail.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/jfoenix-8.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/jfoenix-9.0.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/jfreechart-1.0.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/jxl.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/mysql-connector-java-8.0.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/poi-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/poi-ooxml-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/QRCode_Java.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/rs2xml.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/slf4j-api-1.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/slf4j-log4j12-1.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hau/git/Project_QLST/QLST/src/app/dist/lib/webcam-capture-0.3.12.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

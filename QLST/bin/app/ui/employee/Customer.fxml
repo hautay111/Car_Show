@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="937.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.employee_controller.Create_Customer">
+   <children>
+      <Pane prefHeight="430.0" prefWidth="937.0" style="-fx-background-color: #3EA6FF;">
+         <children>
+            <TextField fx:id="text_cus_id" layoutX="14.0" layoutY="8.0" promptText="ID" visible="false" />
+            <VBox layoutX="22.0" layoutY="349.0" prefHeight="44.0" prefWidth="157.0" spacing="33.0" />
+            <HBox layoutX="163.0" layoutY="85.0" prefHeight="167.0" prefWidth="640.0" spacing="44.0">
+               <children>
+                  <VBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="76.0" spacing="27.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="76.0" text="Code">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="31.0" prefWidth="76.0" text="Name">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="31.0" prefWidth="76.0" text="Address">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="167.0" prefWidth="155.0" spacing="35.0">
+                     <children>
+                        <TextField fx:id="text_cus_code" onKeyTyped="#scanner_barcode_cus" prefHeight="25.0" prefWidth="129.0" promptText="Code" />
+                        <TextField fx:id="text_cus_name" promptText="Customer Name" />
+                        <TextField fx:id="text_cus_address" promptText="Address" />
+                     </children>
+                  </VBox>
+                  <VBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="76.0" spacing="26.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="76.0" text="Join Date" />
+                        <Label prefHeight="31.0" prefWidth="76.0" />
+                        <Label prefHeight="31.0" prefWidth="76.0" text="Male/Female">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="167.0" prefWidth="184.0" spacing="34.0">
+                     <children>
+                        <Label fx:id="text_date" prefHeight="31.0" prefWidth="184.0" text="Date" />
+                        <Label />
+                        <ComboBox fx:id="combobox_product_category" onAction="#box_cus" prefHeight="25.0" prefWidth="188.0" promptText="Choose" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button layoutX="437.0" layoutY="307.0" mnemonicParsing="false" onAction="#btn_cus_add" prefHeight="25.0" prefWidth="161.0" text="Add" />
+            <Label fx:id="label_thongbao" layoutX="285.0" layoutY="61.0" prefHeight="17.0" prefWidth="202.0" textFill="RED" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1362.0" style="-fx-background-color: #CFD2D6;" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.homepage.Login">
+   <children>
+      <Pane layoutX="724.0" prefHeight="700.0" prefWidth="639.0" style="-fx-background-color: #ABEAED;" styleClass="login-ui">
+         <children>
+            <Label layoutX="148.0" layoutY="471.0" text="Password:" textFill="#9f82ee">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txt_pass" layoutX="251.0" layoutY="474.0" prefHeight="25.0" prefWidth="178.0" promptText="Password">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </PasswordField>
+            <CheckBox fx:id="btn_showpass" layoutX="251.0" layoutY="507.0" mnemonicParsing="false" onAction="#show_pass" text="Show Password" textFill="WHITE" />
+            <Button layoutX="354.0" layoutY="539.0" mnemonicParsing="false" onAction="#btn_login" text="Login">
+               <font>
+                  <Font name="Book Antiqua" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="65.0" layoutX="599.0" layoutY="6.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/logout.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <TextField fx:id="txt_username" layoutX="251.0" layoutY="434.0" prefHeight="25.0" prefWidth="178.0" promptText="Username">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Label layoutX="146.0" layoutY="431.0" text="Username:" textFill="#9f82ee">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="146.0" layoutY="75.0" prefHeight="45.0" prefWidth="373.0" text="Welcome SuperMarket" textFill="#2bcfff">
+               <font>
+                  <Font name="Book Antiqua" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="203.0" layoutY="120.0" prefHeight="45.0" prefWidth="234.0" text="- Form Login -" textFill="#2bcfff">
+               <font>
+                  <Font name="Book Antiqua" size="35.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_passhiden" layoutX="251.0" layoutY="474.0" prefHeight="25.0" prefWidth="178.0" promptText="Password" visible="false" />
+         </children>
+      </Pane>
+      <Pane layoutX="-1.0" layoutY="1.0" prefHeight="700.0" prefWidth="724.0" styleClass="login_css" />
+   </children>
+</AnchorPane>

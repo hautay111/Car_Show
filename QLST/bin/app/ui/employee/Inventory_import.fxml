@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="393.0" prefWidth="1175.0" style="-fx-background-color: linear-gradient(to right, #0f0c29, #302b63, #24243e);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.employee_controller.Inventory_crud.Inventory_Inset">
+   <children>
+      <Label alignment="CENTER" layoutX="458.0" prefHeight="52.0" prefWidth="277.0" text="Receipt" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Label>
+      <HBox layoutX="79.0" layoutY="61.0" prefHeight="271.0" prefWidth="980.0" spacing="44.0">
+         <children>
+            <VBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="76.0" spacing="27.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="76.0" text="Barcode" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="76.0" text="Name" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="76.0" text="Price" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="76.0" text="Expiry" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="167.0" prefWidth="155.0" spacing="35.0">
+               <children>
+                  <TextField fx:id="text_product_barcode" prefHeight="25.0" prefWidth="129.0" promptText="Barcode" />
+                  <TextField fx:id="text_product_name" promptText="Product Name" />
+                  <TextField fx:id="text_product_price" promptText="Price" />
+                  <DatePicker fx:id="expiry" prefHeight="20.0" prefWidth="195.0" />
+               </children>
+            </VBox>
+            <VBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="76.0" spacing="26.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="76.0" text="Supplier" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="106.0" text="Amount" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="101.0" text="Price Input" textFill="#efefef">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="76.0" text="Unit" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="271.0" prefWidth="168.0" spacing="34.0">
+               <children>
+                  <ComboBox fx:id="combobox_sup_id" onAction="#box_sup_id" prefHeight="26.0" prefWidth="189.0" promptText="Supplier" />
+                  <TextField fx:id="text_input_detail_amount" prefHeight="25.0" prefWidth="129.0" promptText="Amount" />
+                  <TextField fx:id="text_input_detail_price_input" promptText="Price Input" />
+                  <ComboBox fx:id="combobox_product_unit" onAction="#box_unit" prefHeight="26.0" prefWidth="186.0" promptText="Unit" />
+               </children>
+            </VBox>
+            <VBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="271.0" prefWidth="96.0" spacing="27.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="76.0" text="Brand" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label prefHeight="31.0" prefWidth="76.0" text="Category" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="167.0" prefWidth="155.0" spacing="35.0">
+               <children>
+                  <ComboBox fx:id="combobox_product_brand" onAction="#box_brand" prefHeight="25.0" prefWidth="188.0" promptText="Brand" />
+                  <ComboBox fx:id="combobox_product_category" onAction="#box_category" prefHeight="25.0" prefWidth="188.0" promptText="Category" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <TextField fx:id="text_product_id" layoutX="193.0" layoutY="14.0" prefHeight="25.0" prefWidth="76.0" promptText="ID" visible="false" />
+      <Button layoutX="556.0" layoutY="340.0" mnemonicParsing="false" onAction="#Inset_inventory" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: linear-gradient(to right, #abbaab, #ffffff);" text="insert" textFill="#0700df">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="emp_id" disable="true" layoutX="109.0" layoutY="13.0" prefHeight="26.0" prefWidth="64.0" promptText="emp_id" visible="false" />
+      <Label fx:id="label_notification" layoutX="340.0" layoutY="331.0" prefHeight="39.0" prefWidth="193.0" textFill="#5dffc9">
+         <font>
+            <Font name="Candara Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text_input_id" layoutX="295.0" layoutY="15.0" prefHeight="25.0" prefWidth="76.0" promptText="ID" visible="false" />
+      <Button layoutX="220.0" layoutY="338.0" mnemonicParsing="false" onAction="#Input_create" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: linear-gradient(to right, #abbaab, #ffffff);" text="Create Input" textFill="#ef2c13">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
